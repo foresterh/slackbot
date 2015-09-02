@@ -44,6 +44,14 @@ def to_utf8(s):
         return s
 
 
+def get_json(url, username=None, password=None):
+    data = requests.get(url, auth=(username, password))
+    if data:
+        return data.json()
+    return None
+
+
+
 @contextmanager
 def create_tmp_file(content=''):
     fd, name = tempfile.mkstemp()

@@ -15,13 +15,13 @@ excludes = (
     '*local_settings*',
 )
 
-setup(name='slackbot',
+setup(name='marvin',
       version=__version__,
       license='BSD',
-      description='A simple chat bot for Slack',
-      author='Shuai Lin',
-      author_email='linshuai2012@gmail.com',
-      url='http://github.com/lins05/slackbot',
+      description='A sarcastically useful bot',
+      author='Jamie Houston',
+      author_email='foresterh@gmail.com',
+      url='http://github.com/foresterh/slackbot',
       platforms=['Any'],
       packages=find_packages(exclude=excludes),
       install_requires=install_requires,
