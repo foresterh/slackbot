@@ -1,0 +1,178 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'diff-so-fancy' ]
+2 info using npm@3.3.12
+3 info using node@v0.12.2
+4 verbose node symlink /usr/local/bin/node
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readGlobalPackageData
+8 silly fetchPackageMetaData diff-so-fancy
+9 silly fetchNamedPackageData diff-so-fancy
+10 silly mapToRegistry name diff-so-fancy
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/diff-so-fancy
+14 verbose request uri https://registry.npmjs.org/diff-so-fancy
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 20:47:43
+17 verbose request id 5f344898617e1480
+18 verbose etag "C6P65ZAT9V3EZ3CJ27XRRUTWQ"
+19 http request GET https://registry.npmjs.org/diff-so-fancy
+20 http 304 https://registry.npmjs.org/diff-so-fancy
+21 verbose headers { date: 'Wed, 10 Feb 2016 04:45:14 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"C6P65ZAT9V3EZ3CJ27XRRUTWQ"',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lax1434-LAX',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1455079514.086564,VS0,VE359',
+21 verbose headers   vary: 'Accept' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Wed, 10 Feb 2016 04:45:14 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"C6P65ZAT9V3EZ3CJ27XRRUTWQ"',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lax1434-LAX',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1455079514.086564,VS0,VE359',
+22 silly get     vary: 'Accept' } ]
+23 verbose etag https://registry.npmjs.org/diff-so-fancy from cache
+24 verbose get saving diff-so-fancy to /Users/Jamie/.npm/registry.npmjs.org/diff-so-fancy/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule diff-so-fancy@0.1.2 checking installable status
+38 silly cache add args [ 'diff-so-fancy', null ]
+39 verbose cache add spec diff-so-fancy
+40 silly cache add parsed spec { raw: 'diff-so-fancy',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'diff-so-fancy',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: '*',
+40 silly cache add   type: 'range' }
+41 silly addNamed diff-so-fancy@*
+42 verbose addNamed "*" is a valid semver range for diff-so-fancy
+43 silly addNameRange { name: 'diff-so-fancy', range: '*', hasData: false }
+44 silly mapToRegistry name diff-so-fancy
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/diff-so-fancy
+48 verbose addNameRange registry:https://registry.npmjs.org/diff-so-fancy not in flight; fetching
+49 verbose get https://registry.npmjs.org/diff-so-fancy not expired, no request
+50 silly addNameRange number 2 { name: 'diff-so-fancy', range: '*', hasData: true }
+51 silly addNameRange versions [ 'diff-so-fancy', [ '0.0.0', '0.1.0', '0.1.1', '0.1.2' ] ]
+52 silly addNamed diff-so-fancy@0.1.2
+53 verbose addNamed "0.1.2" is a plain semver version for diff-so-fancy
+54 silly cache afterAdd diff-so-fancy@0.1.2
+55 verbose afterAdd /Users/Jamie/.npm/diff-so-fancy/0.1.2/package/package.json not in flight; writing
+56 verbose afterAdd /Users/Jamie/.npm/diff-so-fancy/0.1.2/package/package.json written
+57 silly loadAllDepsIntoIdealTree Finishing
+58 silly idealTree:prePrune lib
+58 silly idealTree:prePrune └── diff-so-fancy@0.1.2
+59 silly loadIdealTree Finishing
+60 silly currentTree lib
+61 silly idealTree lib
+61 silly idealTree └── diff-so-fancy@0.1.2
+62 silly generateActionsToTake Starting
+63 silly install generateActionsToTake
+64 silly generateActionsToTake Finishing
+65 silly diffTrees action count 1
+66 silly diffTrees add diff-so-fancy@0.1.2
+67 silly decomposeActions action count 8
+68 silly decomposeActions fetch diff-so-fancy@0.1.2
+69 silly decomposeActions extract diff-so-fancy@0.1.2
+70 silly decomposeActions preinstall diff-so-fancy@0.1.2
+71 silly decomposeActions build diff-so-fancy@0.1.2
+72 silly decomposeActions install diff-so-fancy@0.1.2
+73 silly decomposeActions postinstall diff-so-fancy@0.1.2
+74 silly decomposeActions test diff-so-fancy@0.1.2
+75 silly decomposeActions finalize diff-so-fancy@0.1.2
+76 silly executeActions Starting
+77 silly install executeActions
+78 silly doSerial global-install 0
+79 silly doParallel fetch 1
+80 verbose lock using /Users/Jamie/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+81 silly doParallel extract 1
+82 silly extract diff-so-fancy@0.1.2
+83 verbose unbuild lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77
+84 silly gentlyRm /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77 is being purged from base /usr/local
+85 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77
+86 verbose tar unpack /Users/Jamie/.npm/diff-so-fancy/0.1.2/package.tgz
+87 verbose tar unpacking to /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77
+88 silly gentlyRm /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77 is being purged
+89 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77
+90 silly gunzTarPerm modes [ '755', '644' ]
+91 silly gunzTarPerm extractEntry package.json
+92 silly gunzTarPerm extractEntry diff-highlight
+93 silly gunzTarPerm extractEntry diff-so-fancy
+94 silly gunzTarPerm extractEntry readme.md
+95 silly doParallel preinstall 1
+96 silly preinstall diff-so-fancy@0.1.2 /usr/local/lib/node_modules/.staging/diff-so-fancy-7afc16652dddcf75936700ff3e877c77
+97 info lifecycle diff-so-fancy@0.1.2~preinstall: diff-so-fancy@0.1.2
+98 silly lifecycle diff-so-fancy@0.1.2~preinstall: no script for preinstall, continuing
+99 silly doReverseSerial remove 0
+100 silly doSerial move 0
+101 silly doSerial finalize 1
+102 silly finalize /usr/local/lib/node_modules/diff-so-fancy
+103 silly doSerial build 1
+104 silly build diff-so-fancy@0.1.2
+105 info linkStuff diff-so-fancy@0.1.2
+106 silly linkStuff diff-so-fancy@0.1.2 has /usr/local/lib/node_modules as its parent node_modules
+107 silly linkStuff diff-so-fancy@0.1.2 is part of a global install
+108 silly linkStuff diff-so-fancy@0.1.2 is installed into a global node_modules
+109 silly linkStuff diff-so-fancy@0.1.2 is installed into the top-level global node_modules
+110 verbose linkBins diff-so-fancy@0.1.2
+111 verbose link bins [ { 'diff-so-fancy': 'diff-so-fancy',
+111 verbose link bins     'diff-highlight': 'diff-highlight' },
+111 verbose link bins   '/usr/local/bin',
+111 verbose link bins   true ]
+112 verbose linkMans diff-so-fancy@0.1.2
+113 silly gentlyRm /usr/local/bin/diff-so-fancy is being gently removed
+114 silly gentlyRm /usr/local/bin/diff-highlight is being gently removed
+115 silly gentlyRm verifying /usr/local is an npm working directory
+116 silly gentlyRm verifying /usr/local is an npm working directory
+117 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+118 silly gentlyRm deletion target /usr/local/bin/diff-so-fancy is under /usr/local
+119 verbose gentlyRm vacuuming from /usr/local/bin/diff-so-fancy up to /usr/local
+120 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+121 silly gentlyRm deletion target /usr/local/bin/diff-highlight is under /usr/local
+122 verbose gentlyRm vacuuming from /usr/local/bin/diff-highlight up to /usr/local
+123 verbose unlock done using /Users/Jamie/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+124 silly rollbackFailedOptional Starting
+125 silly rollbackFailedOptional Finishing
+126 silly runTopLevelLifecycles Starting
+127 silly runTopLevelLifecycles Finishing
+128 silly install printInstalled
+129 verbose stack Error: EACCES, symlink '../lib/node_modules/diff-so-fancy/diff-so-fancy'
+129 verbose stack     at Error (native)
+130 verbose cwd /Users/Jamie/dev/projects/houstonthings/slackbot
+131 error Darwin 15.3.0
+132 error argv "node" "/usr/local/bin/npm" "install" "-g" "diff-so-fancy"
+133 error node v0.12.2
+134 error npm  v3.3.12
+135 error path ../lib/node_modules/diff-so-fancy/diff-so-fancy
+136 error code EACCES
+137 error errno -13
+138 error Error: EACCES, symlink '../lib/node_modules/diff-so-fancy/diff-so-fancy'
+138 error     at Error (native)
+138 error  { [Error: EACCES, symlink '../lib/node_modules/diff-so-fancy/diff-so-fancy']
+138 error   errno: -13,
+138 error   code: 'EACCES',
+138 error   path: '../lib/node_modules/diff-so-fancy/diff-so-fancy' }
+139 error Please try running this command again as root/Administrator.
+140 verbose exit [ -13, true ]
