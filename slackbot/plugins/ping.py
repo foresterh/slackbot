@@ -51,6 +51,3 @@ def location(message):
     ip = get_lan_ip()
     message.reply("{0} - {1}".format(hostname, ip))
 
-
-@respond_to('leave (.*)')
-def leave_channel(message, channel):
