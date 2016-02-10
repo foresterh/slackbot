@@ -2,6 +2,7 @@
 
 
 import os
+import json
 import logging
 import tempfile
 import requests
@@ -54,6 +55,13 @@ def get_json(url, username=None, password=None):
         return data.json()
     return None
 
+
+def get_json_with_headers(url, headers):
+
+    data = requests.get(url, headers=headers)
+    if data:
+        return json.loads(data.text)
+    return None
 
 
 @contextmanager
