@@ -1,4 +1,4 @@
-from slackbot.bot import listen_to
+from slackbot.bot import listen_to, respond_to
 import random
 
 #
@@ -18,7 +18,7 @@ import random
 # def beer_me(message):
 #     message.send(random.choice(bot_output.responses["beers"]))
 
-@listen_to('dance')
+@respond_to('dance')
 def dance(message):
     message.send(':(-<')
     message.send(':(\-<')
@@ -60,7 +60,7 @@ def dance(message):
 #     message.send(random.choice(bot_output.responses["ignore"]))
 #
 
-@listen_to(r'lame')
+@listen_to('lame')
 def lame(message):
     if random.randrange(5) == 1:
         message.send("So's your face")
@@ -97,8 +97,8 @@ def slap(message):
 
 
 @listen_to(r'(sudo )?make me a sandwich')
-def sandwich(message):
-    if 'sudo' in message.body['text']:
+def sandwich(message, sudo):
+    if sudo:
         message.send('Okay')
     else:
         message.send('What?  Make it yourself.')
