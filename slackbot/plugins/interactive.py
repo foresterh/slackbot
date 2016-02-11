@@ -18,7 +18,7 @@ import random
 # def beer_me(message):
 #     message.send(random.choice(bot_output.responses["beers"]))
 
-@listen_to
+@listen_to('dance')
 def dance(message):
     message.send(':(-<')
     message.send(':(\-<')
