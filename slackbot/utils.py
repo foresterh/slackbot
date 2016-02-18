@@ -49,6 +49,16 @@ def to_utf8(s):
         return s
 
 
+def get_text(url):
+    try:
+        response = requests.get(url)
+        return response.text
+    except:
+        error_messages = ("No way can I do that", "Why would I want to do that?", "Bank error in your favor",
+                          "You trying to kill me with that request??")
+        return random.choice(error_messages)
+
+
 def get_json(url, username=None, password=None):
     data = requests.get(url, auth=(username, password))
     if data:
