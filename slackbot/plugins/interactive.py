@@ -78,7 +78,7 @@ def lame(message):
 
 
 @listen_to(r'(what are )?the (three |3 )?(rules|laws)')
-def rules(message):
+def rules(message, first, second, third):
     three_rules = [
         "1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.",
         "2. A robot must obey any orders given to it by human beings, except where such orders would conflict with the First Law.",
@@ -110,7 +110,7 @@ def sandwich(message, sudo):
 
 
 @listen_to(r'(yes|no)')
-def yes_no(message):
+def yes_no(message, yeahno):
     yesno = ("Of course not.", "Wrong answer!", "Why?", "Are you sure?")
     if random.randrange(5) == 1:
         message.send(random.choice(yesno))
